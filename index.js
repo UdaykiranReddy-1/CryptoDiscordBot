@@ -32,7 +32,6 @@ client.on("messageCreate", async(msg) => {
   // if (msg.content === "hello") {
   //   msg.reply("hi there!");
   // }
-
 });
 const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
@@ -73,5 +72,6 @@ client.on(Events.InteractionCreate, async interaction => {
 		}
 	}
 });
+
 
 client.login(process.env.TOKEN);
